@@ -3,6 +3,7 @@ import Whatsapp from "@/Components/Home/Whatsapp";
 import Footer from "@/Components/Utility/Footer";
 import Navbar from "@/Components/Utility/Navbar";
 import PreLoader from "@/Components/Utility/PreLoader";
+import { Toaster } from "react-hot-toast";
 import "./globals.css";
 export const metadata = {
   title: " Savali Bahuddyeshiy Sanstha",
@@ -22,6 +23,7 @@ export default function RootLayout({ children }) {
       </head>
       <body className="">
         <Whatsapp />
+        <Toaster position="top-center" />
         <ScrollTop />
         <PreLoader />
         <Navbar />
