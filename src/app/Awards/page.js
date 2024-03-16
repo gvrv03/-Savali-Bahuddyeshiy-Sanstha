@@ -2,13 +2,16 @@ import React from "react";
 
 const page = () => {
   return (
-    <div className="mt-[92px] p-5 md:p-0 ">
-      <div className="md:p-10 ">
-        <h1 className="text-4xl font-serif pb-5 border-b container m-auto font-bold">
-          Awards
-        </h1>
+    <div className="mt-[92px] ">
+      <div className="bg-red-800 text-white py-5 px-5 md:px-0 ">
+        <div className="container m-auto">
+          <h1 className=" text-2xl md:text-4xl font-bold ">Achievement</h1>
+          <p className=" text-sm md:text-xl py-2">
+            Savali Bahuddyeshiy Sanstha{" "}
+          </p>
+        </div>
       </div>
-      <div className=" container m-auto mt-5">
+      <div className=" p-5 md:p-0 container m-auto mt-5">
         <SingleAward
           image="/Awards/img.jpg"
           name="Rajmata Jijavu Puraskar (National Level)"

@@ -5,20 +5,59 @@
 /* Custom scrollbar */
 /* width */
 ::-webkit-scrollbar {
-    width: 0px;
+  width: 0px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+/* _____________________Preloader _____________ */
+.spinner {
+  width: 56px;
+  height: 56px;
+  display: grid;
+  animation: spinner-plncf9 4s infinite;
+}
+
+.spinner::before,
+.spinner::after {
+  content: "";
+  grid-area: 1/1;
+  border: 9px solid;
+  border-radius: 50%;
+  border-color: #ff0000 #bb1717 #0000 #0000;
+  mix-blend-mode: darken;
+  animation: spinner-plncf9 1s infinite linear;
+}
+
+.spinner::after {
+  border-color: #0000 #0000 #dbdcef #dbdcef;
+  animation-direction: reverse;
+}
+
+@keyframes spinner-plncf9 {
+  100% {
+    transform: rotate(1turn);
   }
-  
-  /* Track */
-  ::-webkit-scrollbar-track {
-    background: #f1f1f1;
-  }
-  
-  /* Handle */
-  ::-webkit-scrollbar-thumb {
-    background: #888;
-  }
-  
-  /* Handle on hover */
-  ::-webkit-scrollbar-thumb:hover {
-    background: #555;
-  }
+}
+
+.scrollTop{
+  display: grid !important;
+  place-items: center !important;
+  width: 40px !important;
+}
+/* .bgGround{
+  background: red;
+} */

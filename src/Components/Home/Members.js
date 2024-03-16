@@ -5,7 +5,7 @@ const Members = () => {
     <section className="text-gray-600 body-font pb-10">
       <div className="container px-5  mx-auto">
         <div className="flex flex-col text-center w-full mb-10">
-          <h1 className="text-2xl font-medium title-font mb-4 text-gray-900">
+          <h1 data-aos="fade-up" className="text-2xl font-medium title-font mb-4 text-gray-900">
             OUR TEAM
           </h1>
         </div>
@@ -49,7 +49,7 @@ const Members = () => {
 
 const SingleMember = ({ name, designation, img }) => {
   return (
-    <div className="p-4 w-full">
+    <div data-aos="fade-up" className="p-4 w-full">
       <div className="h-full flex flex-col items-center text-center">
         <img src={img} className="w-24 h-24 rounded-full border" alt="users" />
         <div className="w-full mt-5">

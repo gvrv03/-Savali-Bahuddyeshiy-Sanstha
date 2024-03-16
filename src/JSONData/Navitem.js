@@ -7,19 +7,13 @@ export const TopNav = [
   {
     name: "Activities",
     location: "/Activities",
-    icon: " uil  uil-shopping-cart-alt",
+    icon: " uil  uil-lightbulb-alt",
   },
 
   {
     name: "Achievement",
     location: "/Awards",
-    icon: " uil uil-document-layout-left",
-  },
-
-  {
-    name: "Terms & Condition",
-    location: "/TermsCondition",
-    icon: " uil uil-file-contract",
+    icon: " uil uil-trophy",
   },
 
   {
@@ -33,8 +27,8 @@ export const TopNav = [
     icon: " uil uil-phone",
   },
   {
-    name: "Donate Us",
-    location: "/DonateUs",
-    icon: " uil uil-phone",
+    name: "Terms & Condition",
+    location: "/TermsCondition",
+    icon: " uil uil-file-contract",
   },
 ];

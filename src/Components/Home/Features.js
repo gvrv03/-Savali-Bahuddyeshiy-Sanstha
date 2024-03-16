@@ -30,7 +30,7 @@ Efforts include empowering women through sustainable livelihoods and business me
 const SingleFeature = ({ name, icon, details }) => {
   console.log(details);
   return (
-    <div className="p-4 md:w-1/3 flex flex-col text-center items-center">
+    <div data-aos="fade-down"  className="p-4 md:w-1/3 flex flex-col text-center items-center">
       <div className="w-20 h-20 inline-flex items-center justify-center rounded-full bg-red-200 text-red-500 mb-5 flex-shrink-0">
         <i className={` text-3xl  ${icon}`} />
       </div>

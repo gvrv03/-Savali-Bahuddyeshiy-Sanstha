@@ -5,6 +5,14 @@ import DonateUs from "../DonateUs/page";
 const page = () => {
   return (
     <section className=" mt-[92px] text-gray-600 body-font">
+      <div className="bg-red-800 text-white py-5 px-5 md:px-0 ">
+        <div className="container m-auto">
+          <h1 className=" text-2xl md:text-4xl font-bold ">About Us</h1>
+          <p className=" text-sm md:text-xl py-2">
+            Savali Bahuddyeshiy Sanstha{" "}
+          </p>
+        </div>
+      </div>
       <div className="container mx-auto flex flex-col px-5  justify-center items-center">
         <img
           className="lg:w-2/6 md:w-3/6 w-5/6 mb-10 object-cover object-center rounded"
@@ -34,9 +42,6 @@ const page = () => {
             underprivileged tribal communities. Savali Multipurpose Sanstha
             Kalamb is a registered society under Act 1860.
           </p>
-
-          <Features />
-          <DonateUs />
         </div>
       </div>
     </section>

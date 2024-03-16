@@ -4,8 +4,8 @@ import DrawerNav from "../ChildComponents/DrawerNav";
 const Navbar = () => {
   return (
     <>
-      <nav className="fixed top-0 left-0 w-full z-50  text-white bg-red-700">
-        <div className="bg-green-950  py-2 px-5  text-xs   w-full ">
+      <nav className="fixed top-0 left-0  shadow-md w-full z-50  bg-white">
+        <div className="bg-green-950  py-2 px-5  text-xs   text-white w-full ">
           <div className="container m-auto">
             <div className="flex gap-5  items-center justify-center md:justify-start ">
               <div className="flex gap-2 items-center">

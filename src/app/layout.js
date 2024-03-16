@@ -1,7 +1,9 @@
+import ScrollTop from "@/Components/ChildComponents/ScrollTop";
+import Whatsapp from "@/Components/Home/Whatsapp";
 import Footer from "@/Components/Utility/Footer";
 import Navbar from "@/Components/Utility/Navbar";
+import PreLoader from "@/Components/Utility/PreLoader";
 import "./globals.css";
-
 export const metadata = {
   title: " Savali Bahuddyeshiy Sanstha",
   description:
@@ -19,6 +21,9 @@ export default function RootLayout({ children }) {
         <link rel="icon" href="/favicon.ico" sizes="any" />
       </head>
       <body className="">
+        <Whatsapp />
+        <ScrollTop />
+        <PreLoader />
         <Navbar />
         {children}
         <Footer />

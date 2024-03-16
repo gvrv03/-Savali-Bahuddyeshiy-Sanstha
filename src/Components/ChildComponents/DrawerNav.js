@@ -41,8 +41,8 @@ export default function DrawerNav() {
                   router.push(item.location);
                 }}
                 className={`${
-                  isActive && "bg-gray-200 text-black font-bold "
-                } text-gray-500  px-5 py-2 flex gap-5    cursor-pointer  hover:bg-gray-200 hover:text-black hover:font-bold  `}
+                  isActive && "bg-red-50 text-black font-bold "
+                }   px-5 py-2 flex gap-5    cursor-pointer  hover:bg-red-100 hover:text-black hover:font-bold  `}
               >
                 <i className={`${item?.icon} text-xl `} />
                 <button className="   font-semibold text-left  ">
@@ -55,19 +55,17 @@ export default function DrawerNav() {
       </div>
       <div className="flex-col flex gap-2 ">
         <button
-          className=" bg-red-800  rounded-full text-white font-bold p-2 w-[100%] "
-          type="button"
+          onClick={() => {
+            router.push("/DonateUs");
+          }}
+          className="py-3 w-full md:w-auto flex items-center justify-center gap-5   border md:rounded-full px-10 uppercase font-semibold  "
         >
-          Join Us
-        </button>
-        <button
-        onClick={()=>{
-          router.push("/DonateUs")
-        }}
-          className=" bg-red-800  rounded-full text-white font-bold p-2 w-[100%] "
-          type="button"
-        >
-          Donate Us
+          <img
+            width="30"
+            height="30"
+            src="https://img.icons8.com/external-vectorslab-flat-vectorslab/53/external-Donation-business-and-finance-vectorslab-flat-vectorslab-2.png"
+          />
+          <span>Donate Us</span>
         </button>
       </div>
     </Box>
@@ -75,12 +73,12 @@ export default function DrawerNav() {
 
   return (
     <div>
-      <Button
-        className=" md:hidden visible text-white "
+      <button
+        className=" md:hidden  text-red-500 "
         onClick={toggleDrawer(true)}
       >
         <MenuIcon className="w-8  h-8" />
-      </Button>
+      </button>
       <div className="hidden md:flex  gap-1 ">
         {TopNav?.map((item, index) => {
           const isActive = pathname === item?.location;
@@ -91,8 +89,8 @@ export default function DrawerNav() {
               }}
               key={index}
               className={`${
-                isActive && " border-b-2 font-bold"
-              } text-white px-5 py-2 flex gap-1  items-center   cursor-pointer    hover:border-b-2 hover:font-bold`}
+                isActive && " border-b-2 text-red-500 border-red-500 font-bold"
+              }  px-5 py-2 flex gap-1   items-center text-black   cursor-pointer    hover:border-b-2 hover:text-red-500 hover:border-red-500 hover:font-bold`}
             >
               <i className={`${item?.icon} text-sm `} />
               <button className=" text-sm   text-left  ">{item?.name}</button>
