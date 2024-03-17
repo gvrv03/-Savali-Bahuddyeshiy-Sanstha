@@ -16,7 +16,7 @@ const Members = () => {
             designation="President"
           />
           <SingleMember
-            img="/members/jaya.jpgd"
+            // img="/members/jaya.jpg"
             name="Gajendra Kove"
             designation="Vice President"
           />

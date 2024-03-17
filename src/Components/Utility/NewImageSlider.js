@@ -31,14 +31,14 @@ const NewImageSlider = () => {
             >
               {images?.map((item, index) => {
                 return (
-                  <>
+
                     <img
                       src={item}
                       alt={item}
                       key={index}
                       className="w-full h-[200px] md:h-[500px]  "
                     />
-                  </>
+
                 );
               })}
             </Slide>

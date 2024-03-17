@@ -10,7 +10,7 @@ const FundSupport = () => {
       </p>
 
       <div  data-aos="fade-up" className="flex items-center  p-5 justify-center border flex-col md:flex-row  gap-5">
-        <Image src="/Funding/satyarthilogo.jfif" width={200} height={100} />
+        <Image alt="satyarthilogo"  src="/Funding/satyarthilogo.jfif" width={200} height={100} />
 
         <div className="border p-5 rounded-md font-bold  flex gap-5 items-center">
           <i className="uil uil-user text-xl " /> <p>Local Contribution</p>

@@ -41,10 +41,10 @@ const About = () => {
         data-aos="fade-up"
         className="w-full md:w-[40%]  grid grid-cols-2 gap-2 "
       >
-        <img className="w-80 h-60" src="/About/img (1).jpg" />
-        <img className="w-80 h-60" src="/About/img (2).jpg" />
-        <img className="w-80 h-60" src="/About/img (3).jpg" />
-        <img className="w-80 h-60" src="/About/img (4).jpg" />
+        <img className="w-80 h-60"  alt="about" src="/About/img (1).jpg" />
+        <img className="w-80 h-60"  alt="about" src="/About/img (2).jpg" />
+        <img className="w-80 h-60"  alt="about" src="/About/img (3).jpg" />
+        <img className="w-80 h-60"  alt="about" src="/About/img (4).jpg" />
       </div>
     </div>
   );
