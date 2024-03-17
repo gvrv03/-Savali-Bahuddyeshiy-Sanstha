@@ -26,27 +26,28 @@ const ContactInput = () => {
         body: JSON.stringify({
           subject: `${formData.name} are trying to contact you !`,
           formData: `
-          <table>
-    <tr>
-        <td>Name:</td>
-        <td>${formData.name}</td>
-    </tr>
-    <tr>
-        <td>Email:</td>
-        <td>${formData.email}</td>
-        
-    </tr>
-    <tr>
-        <td>Phone:</td>
-        <td>${formData.phone}</td>
-        
-    </tr>
-    <tr>
-        <td>Message:</td>
-        <td>${formData.message}</td>
-        
-    </tr>
-</table>`,
+          <table style="width: 100%;border: 1px solid black;">
+          <tr>
+              <td   style="border: 1px solid black;" >Name:</td>
+              <td   style="border: 1px solid black;" >${formData.name}</td>
+          </tr>
+          <tr>
+              <td   style="border: 1px solid black;" >Email:</td>
+              <td   style="border: 1px solid black;" >${formData.email}</td>
+              
+          </tr>
+          <tr>
+              <td   style="border: 1px solid black;" >Phone:</td>
+              <td   style="border: 1px solid black;" >${formData.phone}</td>
+              
+          </tr>
+          <tr>
+              <td   style="border: 1px solid black;" >Message:</td>
+              <td   style="border: 1px solid black;" >${formData.message}</td>
+              
+          </tr>
+      </table>
+      `,
         }),
       });
 

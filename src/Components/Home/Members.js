@@ -5,7 +5,10 @@ const Members = () => {
     <section className="text-gray-600 body-font pb-10">
       <div className="container px-5  mx-auto">
         <div className="flex flex-col text-center w-full mb-10">
-          <h1 data-aos="fade-up" className="text-2xl font-medium title-font mb-4 text-gray-900">
+          <h1
+            data-aos="fade-up"
+            className="text-2xl font-medium title-font mb-4 text-gray-900"
+          >
             OUR TEAM
           </h1>
         </div>
@@ -16,7 +19,7 @@ const Members = () => {
             designation="President"
           />
           <SingleMember
-            // img="/members/jaya.jpg"
+            img="/members/gajendra.png"
             name="Gajendra Kove"
             designation="Vice President"
           />
@@ -35,7 +38,11 @@ const Members = () => {
             name="Rupali Nanaaware"
             designation="Member"
           />
-          <SingleMember name="Kishor Shende" designation="Member" />
+          <SingleMember
+            name="Kishor Shende"
+            img="/members/kishor.png"
+            designation="Member"
+          />
           <SingleMember
             img="/members/rohan.jpg"
             name="Rohan Thakre"

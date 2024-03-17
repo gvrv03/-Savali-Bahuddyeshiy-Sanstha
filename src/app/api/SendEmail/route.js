@@ -1,6 +1,6 @@
 import { NextResponse } from "next/server";
 import { Resend } from "resend";
-const resend = new Resend("re_GvsnCJ3B_GajgupNFmLFLqnD5SfF6qwsm");
+const resend = new Resend("re_TiLVUYG3_C2DMidHnMAVqBoq1fogcNvrX");
 
 export const POST = async (req) => {
   try {
@@ -8,8 +8,8 @@ export const POST = async (req) => {
     const { subject, formData } = Details;
 
     const { data, error } = await resend.emails.send({
-      from: "gcoenCSE@gauravnarnaware.com",
-      to: "gauravnarnaware3112003@gmail.com",
+      from: "savali@savali.org.in",
+      to: ["gauravnarnaware3112003@gmail.com","shendes969@gmail.com"],
       subject: subject,
       html: formData,
     });
