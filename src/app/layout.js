@@ -9,6 +9,12 @@ export const metadata = {
   title: " Savali Bahuddyeshiy Sanstha",
   description:
     "Savli Multipurpose Society is a registered, non-profit, secular, voluntary organization. Which is working for rural and urban development. ",
+  openGraph: {
+    images: "/logo.svg",
+    title: " Savali Bahuddyeshiy Sanstha",
+    description:
+      "Savli Multipurpose Society is a registered, non-profit, secular, voluntary organization. Which is working for rural and urban development. ",
+  },
 };
 
 export default function RootLayout({ children }) {
@@ -19,7 +25,40 @@ export default function RootLayout({ children }) {
           rel="stylesheet"
           href="https://unicons.iconscout.com/release/v4.0.8/css/line.css"
         />
-        <link rel="icon" href="/favicon.ico" sizes="any" />
+        <link rel="icon" href="/favi.png" sizes="any" />
+        {/* <!-- Primary Meta Tags --> */}
+        <title> Savali Bahuddyeshiy Sanstha</title>
+        <meta name="title" content=" Savali Bahuddyeshiy Sanstha" />
+        <meta
+          name="description"
+          content="Savli Multipurpose Society is a registered, non-profit, secular, voluntary organization. Which is working for rural and urban development. "
+        />
+
+        {/* <!-- Open Graph / Facebook --> */}
+        <meta property="og:type" content="website" />
+        <meta
+          property="og:url"
+          content="https://savalibahuddyeshiysanstha.com"
+        />
+        <meta property="og:title" content=" Savali Bahuddyeshiy Sanstha" />
+        <meta
+          property="og:description"
+          content="Savli Multipurpose Society is a registered, non-profit, secular, voluntary organization. Which is working for rural and urban development. "
+        />
+        <meta property="og:image" content="/logo.svg" />
+
+        {/* <!-- Twitter --> */}
+        <meta property="twitter:card" content="summary_large_image" />
+        <meta
+          property="twitter:url"
+          content="https://savalibahuddyeshiysanstha.com"
+        />
+        <meta property="twitter:title" content=" Savali Bahuddyeshiy Sanstha" />
+        <meta
+          property="twitter:description"
+          content="Savli Multipurpose Society is a registered, non-profit, secular, voluntary organization. Which is working for rural and urban development. "
+        />
+        <meta property="twitter:image" content="/logo.svg" />
       </head>
       <body className="">
         <Whatsapp />
