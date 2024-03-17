@@ -38,7 +38,7 @@ export default function RootLayout({ children }) {
         <meta property="og:type" content="website" />
         <meta
           property="og:url"
-          content="https://savalibahuddyeshiysanstha.com"
+          content="https://www.savali.org.in"
         />
         <meta property="og:title" content=" Savali Bahuddyeshiy Sanstha" />
         <meta
@@ -51,7 +51,7 @@ export default function RootLayout({ children }) {
         <meta property="twitter:card" content="summary_large_image" />
         <meta
           property="twitter:url"
-          content="https://savalibahuddyeshiysanstha.com"
+          content="https://www.savali.org.in"
         />
         <meta property="twitter:title" content=" Savali Bahuddyeshiy Sanstha" />
         <meta
