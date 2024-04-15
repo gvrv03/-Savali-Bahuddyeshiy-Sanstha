@@ -22,7 +22,12 @@
 ::-webkit-scrollbar-thumb:hover {
   background: #555;
 }
-
+/* Backgrond Pattern */
+.pattern {
+  background-image: radial-gradient(#ffdddd 2px, transparent 2px);
+  background-size: 48px 48px;
+  background-color: #ffffff;
+}
 /* _____________________Preloader _____________ */
 .spinner {
   width: 56px;
@@ -53,7 +58,7 @@
   }
 }
 
-.scrollTop{
+.scrollTop {
   display: grid !important;
   place-items: center !important;
   width: 40px !important;

@@ -16,6 +16,7 @@ const NewImageSlider = () => {
     "/Slideshow/img (8).jpg",
     "/Slideshow/img (9).jpg",
   ];
+  
   const router = useRouter();
 
   return (

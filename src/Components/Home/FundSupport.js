@@ -3,7 +3,7 @@ import React from "react";
 
 const FundSupport = () => {
   return (
-    <div className="container  m-auto  p-5 md:p-0">
+    <div className="container  m-auto  p-5 bg-white md:p-0">
       <h1 data-aos="fade-up" className=" font-bold text-center text-3xl ">Fundding Supporter</h1>
       <p data-aos="fade-up" className="text-center text-gray-500 py-5">
         Savali Bahuddyeshiy Sanstha

@@ -1,7 +1,10 @@
+"use client";
 import Image from "next/image";
+import { useRouter } from "next/navigation";
 import React from "react";
 import DrawerNav from "../ChildComponents/DrawerNav";
 const Navbar = () => {
+  const router = useRouter();
   return (
     <>
       <nav className="fixed top-0 left-0  shadow-md w-full z-50  bg-white">
@@ -27,7 +30,15 @@ const Navbar = () => {
         </div>
         <div className="container  m-auto">
           <div className=" flex  px-5 md:px-0  py-2 justify-between items-center">
-           <Image src="/logo.svg" height={40} width={40} className="rounded-full"   />
+            <Image
+              src="/logo.svg"
+              height={40}
+              width={40}
+              className="rounded-full"
+              onClick={() => {
+                router.push("/");
+              }}
+            />
             <DrawerNav />
           </div>
         </div>

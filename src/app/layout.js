@@ -64,7 +64,6 @@ export default function RootLayout({ children }) {
         <Whatsapp />
         <Toaster position="top-center" />
         <ScrollTop />
-        <PreLoader />
         <Navbar />
         {children}
         <Footer />

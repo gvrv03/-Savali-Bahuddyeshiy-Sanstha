@@ -32,7 +32,7 @@ const About = () => {
           onClick={() => {
             router.push("/AboutUs");
           }}
-          className=" w-full md:w-auto py-3  uppercase  px-5 mt-10  font-semibold border-2  text-black "
+          className=" w-full md:w-auto  bg-white py-3  uppercase  px-5 mt-10  font-semibold border-2  text-black "
         >
           Learn More
         </button>

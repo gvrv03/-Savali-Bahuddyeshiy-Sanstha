@@ -13,7 +13,7 @@ const page = () => {
           </p>
         </div>
       </div>
-      <div className="  px-5 md:px-0 mt-5 grid gap-5 grid-cols-2 container m-auto  md:grid-cols-4">
+      <div className="  p-5 md:px-0 mt-5 grid gap-5 grid-cols-2 container m-auto  md:grid-cols-4">
         {activityDetails?.map((item, index) => {
           return (
             <SingleCard

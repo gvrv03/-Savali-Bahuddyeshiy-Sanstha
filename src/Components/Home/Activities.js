@@ -31,7 +31,7 @@ const Activities = () => {
             );
           })}
         </div>
-        <div className="w-full flex mt-5 items-center justify-center">
+        <div className="w-full bg-white flex mt-5 items-center justify-center">
           <button
           data-aos="fade-down"
             className="border uppercase   px-20 py-3 "
@@ -49,7 +49,7 @@ const Activities = () => {
 
 export const SingleCard = ({ name, details, image, noOf }) => {
   return (
-    <div data-aos="fade-down" className="w-full ">
+    <div data-aos="fade-down" className="bg-white border border-gray-200 rounded-lg  p-2 w-full ">
       <div className="rounded-lg h-52 overflow-hidden">
         <img
           alt="content"
