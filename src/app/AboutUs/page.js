@@ -2,6 +2,20 @@ import Features from "@/Components/Home/Features";
 import React from "react";
 import DonateUs from "../DonateUs/page";
 
+export const metadata = {
+  title: " About || Savali Bahuddyeshiy Sanstha",
+  description:
+    "Savli Multipurpose Society is a registered, non-profit, secular, voluntary organization. Which is working for rural and urban development. ",
+  openGraph: {
+    images: "/logo.svg",
+    title: "About ||  Savali Bahuddyeshiy Sanstha",
+    description:
+      "Savli Multipurpose Society is a registered, non-profit, secular, voluntary organization. Which is working for rural and urban development. ",
+  },
+};
+
+
+
 const page = () => {
   return (
     <section className=" mt-[92px] text-gray-600 body-font">
