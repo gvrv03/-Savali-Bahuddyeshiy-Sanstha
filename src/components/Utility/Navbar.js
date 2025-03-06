@@ -45,7 +45,7 @@ export default function Navbar() {
       </div>
 
       {/* Navbar */}
-      <header className="bg-white shadow-sm sticky top-0 ">
+      <header className="bg-white shadow-sm sticky top-0 z-40">
         <div className="container mx-auto flex justify-between items-center py-4 px-4 md:px-8">
           <Link href="/" className="flex items-center">
             <Image
