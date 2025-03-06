@@ -1,33 +1,29 @@
-import { SingleCard } from "@/Components/Home/Activities";
-import { activityDetails } from "@/JSONData/HomeData";
-import React from "react";
+import { Card, CardContent } from "@/components/ui/card"
+import PageHeader from "@/components/Utility/PageHeader"
+import { activityDetails } from "@/JSONData/HomeData"
+import Image from "next/image"
 
-const page = () => {
+export default function ActivitiesPage() {
   return (
-    <div className="mt-[88px]">
-      <div className="bg-red-800 text-white py-5 px-5 md:px-0 ">
-        <div className="container m-auto">
-          <h1 className=" text-2xl md:text-4xl font-bold ">Activities</h1>
-          <p className=" text-sm md:text-xl py-2">
-            Savali Bahuddyeshiy Sanstha{" "}
-          </p>
+    <>
+      <PageHeader title="Activities" />
+      <div className="container mx-auto py-5 px-3 md:px-0">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+          {activityDetails.map((activity) => (
+            <Card key={activity.id} className="overflow-hidden shadow-lg hover:shadow-xl transition-shadow">
+              <div className="relative h-48">
+                <Image src={activity.image || "/placeholder.svg"} alt={activity.title} fill className="object-cover" />
+              </div>
+              <CardContent className="p-6">
+                <h3 className="text-xl font-bold mb-2">{activity.name}</h3>
+                <p className="text-sm text-gray-500 mb-3">{activity.noOf}</p>
+                <p className="text-gray-600">{activity.details}</p>
+              </CardContent>
+            </Card>
+          ))}
         </div>
       </div>
-      <div className="  p-5 md:px-0 mt-5 grid gap-5 grid-cols-2 container m-auto  md:grid-cols-4">
-        {activityDetails?.map((item, index) => {
-          return (
-            <SingleCard
-              key={index}
-              image={item.image}
-              name={item.name}
-              details={item.details}
-              noOf={item.noOf}
-            />
-          );
-        })}
-      </div>
-    </div>
-  );
-};
+    </>
+  )
+}
 
-export default page;

@@ -4,13 +4,10 @@ const Members = () => {
   return (
     <section className="text-gray-600 body-font pb-10">
       <div className="container px-5  mx-auto">
-        <div className="flex flex-col text-center w-full mb-10">
-          <h1
-            data-aos="fade-up"
-            className="text-2xl font-medium title-font mb-4 text-gray-900"
-          >
-            OUR TEAM
-          </h1>
+      <div className="text-center mb-16">
+          <h2 className="text-3xl text-black md:text-4xl font-bold mb-4">Our Team</h2>
+          <div className="w-20 h-1 bg-primary mx-auto mb-8"></div>
+       
         </div>
         <div className="grid grid-cols-3 md:grid-cols-7">
           <SingleMember

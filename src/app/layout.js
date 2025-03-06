@@ -1,8 +1,8 @@
-import ScrollTop from "@/Components/ChildComponents/ScrollTop";
-import Whatsapp from "@/Components/Home/Whatsapp";
-import Footer from "@/Components/Utility/Footer";
-import Navbar from "@/Components/Utility/Navbar";
-import PreLoader from "@/Components/Utility/PreLoader";
+import ScrollTop from "@/components/ChildComponents/ScrollTop";
+import Whatsapp from "@/components/Home/Whatsapp";
+import Footer from "@/components/Utility/Footer";
+import Navbar from "@/components/Utility/Navbar";
+import PreLoader from "@/components/Utility/PreLoader";
 import { Toaster } from "react-hot-toast";
 import "./globals.css";
 
@@ -89,9 +89,7 @@ export default function RootLayout({ children }) {
         />
       </head>
       <body className="">
-        <Whatsapp />
-        <Toaster position="top-center" />
-        <ScrollTop />
+        <Toaster position="top-center" reverseOrder={false} />
         <Navbar />
         {children}
         <Footer />

@@ -2,8 +2,8 @@ import React from "react";
 
 const page = () => {
   return (
-    <div className="mt-[92px] ">
-      <div className="bg-red-800 text-white py-5 px-5 md:px-0 ">
+    <div className="">
+      <div className="bg-red-800 text-white py-5 px-3 md:px-0 ">
         <div className="container m-auto">
           <h1 className=" text-2xl md:text-4xl font-bold ">Achievement</h1>
           <p className=" text-sm md:text-xl py-2">

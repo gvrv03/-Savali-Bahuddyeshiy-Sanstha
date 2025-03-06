@@ -9,7 +9,7 @@ export const POST = async (req) => {
 
     const { data, error } = await resend.emails.send({
       from: "savali@savali.org.in",
-      to: ["gauravnarnaware3112003@gmail.com","shendes969@gmail.com"],
+      to: ["gauravnarnaware3112003@gmail.com", "shendes969@gmail.com"],
       subject: subject,
       html: formData,
     });

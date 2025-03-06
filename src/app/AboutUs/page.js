@@ -1,4 +1,4 @@
-import Features from "@/Components/Home/Features";
+import Features from "@/components/Home/Features";
 import React from "react";
 import DonateUs from "../DonateUs/page";
 
@@ -18,7 +18,7 @@ export const metadata = {
 
 const page = () => {
   return (
-    <section className=" mt-[92px] text-gray-600 body-font">
+    <section className="  text-gray-600 body-font">
       <div className="bg-red-800 text-white py-5 px-5 md:px-0 ">
         <div className="container m-auto">
           <h1 className=" text-2xl md:text-4xl font-bold ">About Us</h1>

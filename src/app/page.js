@@ -1,16 +1,17 @@
 "use client";
-import About from "@/Components/Home/About";
-import Activities from "@/Components/Home/Activities";
-import ContactForm from "@/Components/Home/ContactForm";
-import Features from "@/Components/Home/Features";
-import FundSupport from "@/Components/Home/FundSupport";
-import JoinJourney from "@/Components/Home/JoinJourney";
-import LandingPage from "@/Components/Home/LandingPage";
-import Members from "@/Components/Home/Members";
+import ContactForm from "@/components/Home/ContactForm";
+import FundSupport from "@/components/Home/FundSupport";
+import JoinJourney from "@/components/Home/JoinJourney";
+import Members from "@/components/Home/Members";
 import { useEffect } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
-import NewImageSlider from "@/Components/Utility/NewImageSlider";
+import Hero from "@/components/Utility/NewImageSlider";
+import AboutSection from "@/components/Home/About";
+import VisionMission from "@/components/Home/Features";
+import CoreActivities from "@/components/Home/Activities";
+import FullScreenSpinner from "./loading";
+// import NewImageSlider from "@/Components/Utility/NewImageSlider";
 export default function Home() {
   useEffect(() => {
     AOS.init({
@@ -22,12 +23,11 @@ export default function Home() {
     });
   }, []);
   return (
-    <main className="pattern" >
-      <NewImageSlider/>
-      {/* <LandingPage /> */}
-      <About />
-      <Features />
-      <Activities />
+    <main className="pattern">
+      <Hero />
+      <AboutSection />
+      <VisionMission />
+      <CoreActivities />
       <JoinJourney />
       <FundSupport />
       <ContactForm />

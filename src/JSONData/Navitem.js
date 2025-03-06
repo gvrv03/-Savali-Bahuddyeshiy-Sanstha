@@ -1,34 +1,20 @@
-export const TopNav = [
-  {
-    name: "Home",
-    location: "/",
-    icon: " uil uil-estate",
-  },
-  {
-    name: "Activities",
-    location: "/Activities",
-    icon: " uil  uil-lightbulb-alt",
-  },
 
-  {
-    name: "Achievement",
-    location: "/Awards",
-    icon: " uil uil-trophy",
-  },
+import {
+  Menu, X, Phone, Mail, Facebook, Instagram, Youtube, 
+  Home, Activity, Award, Info, PhoneCall, FileText
+} from "lucide-react"
 
-  {
-    name: "About",
-    location: "/AboutUs",
-    icon: " uil uil-info-circle",
-  },
-  {
-    name: "Contact",
-    location: "/ContactUs",
-    icon: " uil uil-phone",
-  },
-  {
-    name: "Terms & Condition",
-    location: "/TermsCondition",
-    icon: " uil uil-file-contract",
-  },
+export const NAV_LINKS = [
+  { href: "/", label: "Home", icon: Home },
+  { href: "/Activities", label: "Activities", icon: Activity },
+  { href: "/Awards", label: "Achievement", icon: Award },
+  { href: "/AboutUs", label: "About", icon: Info },
+  { href: "/ContactUs", label: "Contact", icon: PhoneCall },
+  { href: "/TermsCondition", label: "Terms & Condition", icon: FileText },
+];
+
+export const SOCIAL_LINKS = [
+  { href: "https://facebook.com", icon: Facebook, label: "Facebook" },
+  { href: "https://instagram.com", icon: Instagram, label: "Instagram" },
+  { href: "https://youtube.com", icon: Youtube, label: "YouTube" },
 ];

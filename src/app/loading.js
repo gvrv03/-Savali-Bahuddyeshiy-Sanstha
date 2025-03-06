@@ -1,11 +1,11 @@
 import React from "react";
 
-const loading = () => {
+const FullScreenSpinner = () => {
   return (
-    <div className="fixed bg-white z-[9999] w-full h-screen grid place-items-center">
-      <div className="spinner"></div>
+    <div className="fixed inset-0 flex items-center justify-center bg-white z-50">
+      <div className="w-12 h-12 border-4 border-gray-300 border-t-gray-600 rounded-full animate-spin"></div>
     </div>
   );
 };
 
-export default loading;
+export default FullScreenSpinner;
