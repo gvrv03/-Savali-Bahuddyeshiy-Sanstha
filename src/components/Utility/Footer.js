@@ -1,3 +1,4 @@
+"use client";
 import Link from "next/link";
 import Image from "next/image";
 import {
@@ -7,10 +8,13 @@ import {
   Youtube,
   Mail,
   Phone,
+  Heart,
 } from "lucide-react";
 import { NAV_LINKS } from "@/JSONData/Navitem";
-
+import { Button } from "../ui/button";
+import { useRouter } from "next/navigation";  
 export default function Footer() {
+  const router = useRouter();
   return (
     <footer className="bg-secondary text-white">
       <div className="container mx-auto px-4 md:px-8 py-12">
@@ -133,6 +137,13 @@ export default function Footer() {
                 कोल्हापूर, Kalamb, Maharashtra 445401
               </li>
             </ul>
+            <Button
+            onClick={() => router.push("/DonateUs")}
+            className="w-full mt-2"
+          >
+            <Heart/>
+            Donate Us
+          </Button>
           </div>
         </div>
       </div>

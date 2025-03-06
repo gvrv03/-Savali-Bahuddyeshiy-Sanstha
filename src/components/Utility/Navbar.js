@@ -1,21 +1,17 @@
-"use client"
+"use client";
 
 import { useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
-import { usePathname } from "next/navigation";
-import {
-  Menu,
-  X,
-  Phone,
-  Mail,
-} from "lucide-react";
+import { usePathname, useRouter } from "next/navigation";
+import { Menu, X, Phone, Mail, Heart } from "lucide-react";
 import { NAV_LINKS, SOCIAL_LINKS } from "@/JSONData/Navitem";
+import { Button } from "../ui/button";
 
 export default function Navbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const pathname = usePathname();
-
+  const router = useRouter();
   const closeMenu = () => setIsMenuOpen(false);
 
   return (
@@ -35,7 +31,12 @@ export default function Navbar() {
           </div>
           <div className="flex items-center space-x-4">
             {SOCIAL_LINKS.map(({ href, icon: Icon, label }) => (
-              <Link key={href} href={href} aria-label={label} className="hover:text-gray-300 transition">
+              <Link
+                key={href}
+                href={href}
+                aria-label={label}
+                className="hover:text-gray-300 transition"
+              >
                 <Icon size={16} />
               </Link>
             ))}
@@ -44,10 +45,16 @@ export default function Navbar() {
       </div>
 
       {/* Navbar */}
-      <header className="bg-white shadow-sm sticky top-0 z-50">
+      <header className="bg-white shadow-sm sticky top-0 ">
         <div className="container mx-auto flex justify-between items-center py-4 px-4 md:px-8">
           <Link href="/" className="flex items-center">
-            <Image src="/logo.svg" alt="Savali Bahuddyeshiy Sanstha Logo" width={80} height={60} className="h-12 w-auto" />
+            <Image
+              src="/logo.svg"
+              alt="Savali Bahuddyeshiy Sanstha Logo"
+              width={80}
+              height={60}
+              className="h-12 w-auto"
+            />
           </Link>
 
           {/* Desktop Nav */}
@@ -56,7 +63,11 @@ export default function Navbar() {
               <Link
                 key={href}
                 href={href}
-                className={`flex items-center gap-1 hover:text-accent transition ${pathname === href ? "text-accent font-medium" : "text-gray-700"}`}
+                className={`flex items-center gap-1 hover:text-accent transition ${
+                  pathname === href
+                    ? "text-accent font-medium"
+                    : "text-gray-700"
+                }`}
               >
                 <Icon size={18} />
                 <span>{label}</span>
@@ -76,7 +87,12 @@ export default function Navbar() {
       </header>
 
       {/* Overlay */}
-      {isMenuOpen && <div className="fixed inset-0 bg-black/50 z-40 transition-opacity duration-300" onClick={closeMenu}></div>}
+      {isMenuOpen && (
+        <div
+          className="fixed inset-0 bg-black/50 z-40 transition-opacity duration-300"
+          onClick={closeMenu}
+        ></div>
+      )}
 
       {/* Mobile Sidebar */}
       <div
@@ -84,13 +100,16 @@ export default function Navbar() {
           isMenuOpen ? "translate-x-0" : "-translate-x-full"
         } transition-transform duration-300 ease-in-out`}
       >
-        <div className="p-4 border-b flex items-center justify-between">
+        <div className="p-4 border-b flex items-center justify-center">
           <Link href="/" onClick={closeMenu}>
-            <Image src="/logo.svg" alt="Savali Bahuddyeshiy Sanstha Logo" width={60} height={45} className="h-10 w-auto" />
+            <Image
+              src="/logo.svg"
+              alt="Savali Bahuddyeshiy Sanstha Logo"
+              width={60}
+              height={45}
+              className="h-10 w-auto"
+            />
           </Link>
-          <button onClick={closeMenu} className="text-gray-500 hover:text-gray-700 transition">
-            <X size={24} />
-          </button>
         </div>
 
         {/* Mobile Nav Links */}
@@ -100,7 +119,11 @@ export default function Navbar() {
               <li key={href}>
                 <Link
                   href={href}
-                  className={`flex items-center gap-3 p-2 rounded-md hover:bg-accent/10 transition ${pathname === href ? "bg-accent/10 text-accent" : "text-gray-700"}`}
+                  className={`flex items-center gap-3 p-2 rounded-md hover:bg-accent/10 transition ${
+                    pathname === href
+                      ? "bg-accent/10 text-accent"
+                      : "text-gray-700"
+                  }`}
                   onClick={closeMenu}
                 >
                   <Icon size={20} />
@@ -123,6 +146,14 @@ export default function Navbar() {
               <span>shendes969@gmail.com</span>
             </div>
           </div>
+
+          <Button
+            onClick={() => router.push("/DonateUs")}
+            className="w-full mt-2"
+          >
+            <Heart/>
+            Donate Us
+          </Button>
         </div>
       </div>
     </>

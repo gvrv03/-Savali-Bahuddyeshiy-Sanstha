@@ -1,14 +1,9 @@
 import React from "react";
-
+import PageHeader from "@/components/Utility/PageHeader";
 const DonateUs = () => {
   return (
-    <div className="mt-[88px]">
-      <div className="bg-red-800 text-white py-5 px-5 md:px-0 ">
-        <div className="container m-auto">
-          <h1 className=" text-2xl md:text-4xl font-bold ">Donate Us</h1>
-          <p className=" text-sm md:text-xl py-2">Savali Bahuddyeshiy Sanstha </p>
-        </div>
-      </div>
+    <div className="">
+      <PageHeader title="Donate Us" />
       <div className=" py-5 px-5 md:px-0 container m-auto ">
         <div>
           <p className="pb-5 text-justify">

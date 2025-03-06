@@ -1,6 +1,7 @@
 import Features from "@/components/Home/Features";
 import React from "react";
 import DonateUs from "../DonateUs/page";
+import PageHeader from "@/components/Utility/PageHeader";
 
 export const metadata = {
   title: " About || Savali Bahuddyeshiy Sanstha",
@@ -19,14 +20,7 @@ export const metadata = {
 const page = () => {
   return (
     <section className="  text-gray-600 body-font">
-      <div className="bg-red-800 text-white py-5 px-5 md:px-0 ">
-        <div className="container m-auto">
-          <h1 className=" text-2xl md:text-4xl font-bold ">About Us</h1>
-          <p className=" text-sm md:text-xl py-2">
-            Savali Bahuddyeshiy Sanstha{" "}
-          </p>
-        </div>
-      </div>
+      <PageHeader title="About Us" />
       <div className="container mx-auto flex flex-col px-5  justify-center items-center">
         <img
           className="lg:w-2/6 md:w-3/6 w-5/6 mb-10 object-cover object-center rounded"

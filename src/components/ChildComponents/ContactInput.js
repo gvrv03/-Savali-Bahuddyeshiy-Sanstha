@@ -68,7 +68,7 @@ export default function ContactSection() {
         <div className="grid md:grid-cols-2 gap-12">
           <div className="space-y-8">
             <h3 className="text-2xl font-semibold text-gray-800">Get In Touch</h3>
-            <p className="text-gray-600">We'd love to hear from you. Please fill out the form and we'll get back to you as soon as possible.</p>
+            <p className="text-gray-600">We had love to hear from you. Please fill out the form and we will get back to you as soon as possible.</p>
 
             <div className="space-y-6">
               <div className="flex items-start space-x-4">

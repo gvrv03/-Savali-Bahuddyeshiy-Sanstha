@@ -91,6 +91,7 @@ export default function RootLayout({ children }) {
       <body className="">
         <Toaster position="top-center" reverseOrder={false} />
         <Navbar />
+        <Whatsapp />
         {children}
         <Footer />
       </body>
